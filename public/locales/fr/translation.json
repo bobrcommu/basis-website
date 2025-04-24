@@ -1,0 +1,72 @@
+{
+  "common": {
+    "buttons": {
+      "getStarted": "Commencer",
+      "learnMore": "En savoir plus",
+      "createMemorial": "Créer un mémorial",
+      "contactUs": "Contactez-nous",
+      "exploreProducts": "Explorer les produits"
+    },
+    "navigation": {
+      "home": "Accueil",
+      "products": "Produits",
+      "pricing": "Tarifs",
+      "about": "À propos",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "footer": {
+      "rights": "Tous droits réservés",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Transformez les souvenirs en héritages numériques durables",
+      "subtitle": "Créez des mémoriaux numériques durables pour vos proches"
+    },
+    "features": {
+      "title": "Caractéristiques qui nous rendent spéciaux",
+      "subtitle": "Découvrez les fonctionnalités uniques qui distinguent nos mémoriaux numériques.",
+      "feature1": {
+        "title": "Mémoriaux QR Code",
+        "description": "Pages mémorielles facilement accessibles via des codes QR qui peuvent être placés sur des pierres tombales."
+      },
+      "feature2": {
+        "title": "Héritage numérique",
+        "description": "Créez un héritage numérique durable qui préserve les souvenirs pour les générations."
+      },
+      "feature3": {
+        "title": "Facile à créer",
+        "description": "Processus simple pour créer de beaux mémoriaux numériques pour vos proches."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça fonctionne",
+      "step1": {
+        "title": "Créer un profil",
+        "description": "Configurez un profil mémoriel numérique pour votre être cher."
+      },
+      "step2": {
+        "title": "Ajouter du contenu",
+        "description": "Téléchargez des photos, des vidéos, des histoires et des souvenirs."
+      },
+      "step3": {
+        "title": "Placer le code QR",
+        "description": "Recevez votre code QR unique à placer sur le mémorial."
+      }
+    }
+  },
+  "locizeTest": {
+    "title": "Page de test Locize",
+    "description": "Cette page démontre l'intégration de Locize pour les traductions.",
+    "currentLanguage": "Langue actuelle",
+    "translationsLoaded": "Traductions chargées avec succès",
+    "addTranslation": "Ajouter une traduction",
+    "updateTranslation": "Mettre à jour la traduction",
+    "translationKey": "Clé de traduction",
+    "translationValue": "Valeur de traduction",
+    "translationExample": "Exemple de traduction"
+  }
+}

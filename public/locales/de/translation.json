@@ -1,0 +1,72 @@
+{
+  "common": {
+    "buttons": {
+      "getStarted": "Starten",
+      "learnMore": "Mehr erfahren",
+      "createMemorial": "Gedenkstätte erstellen",
+      "contactUs": "Kontakt",
+      "exploreProducts": "Produkte erkunden"
+    },
+    "navigation": {
+      "home": "Startseite",
+      "products": "Produkte",
+      "pricing": "Preise",
+      "about": "Über uns",
+      "blog": "Blog",
+      "contact": "Kontakt"
+    },
+    "footer": {
+      "rights": "Alle Rechte vorbehalten",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Verwandeln Sie Erinnerungen in dauerhafte digitale Vermächtnisse",
+      "subtitle": "Erstellen Sie dauerhafte digitale Gedenkstätten für Ihre Lieben"
+    },
+    "features": {
+      "title": "Funktionen, die uns besonders machen",
+      "subtitle": "Entdecken Sie die einzigartigen Funktionen, die unsere digitalen Gedenkstätten auszeichnen.",
+      "feature1": {
+        "title": "QR-Code Gedenkstätten",
+        "description": "Leicht zugängliche Gedenkseiten durch QR-Codes, die auf Grabsteinen platziert werden können."
+      },
+      "feature2": {
+        "title": "Digitales Erbe",
+        "description": "Schaffen Sie ein dauerhaftes digitales Erbe, das Erinnerungen für Generationen bewahrt."
+      },
+      "feature3": {
+        "title": "Einfach zu erstellen",
+        "description": "Einfacher Prozess zur Erstellung schöner digitaler Gedenkstätten für Ihre Lieben."
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "step1": {
+        "title": "Profil erstellen",
+        "description": "Richten Sie ein digitales Gedenkprofil für Ihren Lieben ein."
+      },
+      "step2": {
+        "title": "Inhalte hinzufügen",
+        "description": "Laden Sie Fotos, Videos, Geschichten und Erinnerungen hoch."
+      },
+      "step3": {
+        "title": "QR-Code platzieren",
+        "description": "Erhalten Sie Ihren einzigartigen QR-Code zur Platzierung auf der Gedenkstätte."
+      }
+    }
+  },
+  "locizeTest": {
+    "title": "Locize Testseite",
+    "description": "Diese Seite demonstriert die Locize-Integration für Übersetzungen.",
+    "currentLanguage": "Aktuelle Sprache",
+    "translationsLoaded": "Übersetzungen erfolgreich geladen",
+    "addTranslation": "Übersetzung hinzufügen",
+    "updateTranslation": "Übersetzung aktualisieren",
+    "translationKey": "Übersetzungsschlüssel",
+    "translationValue": "Übersetzungswert",
+    "translationExample": "Übersetzungsbeispiel"
+  }
+}

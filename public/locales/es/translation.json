@@ -1,0 +1,72 @@
+{
+  "common": {
+    "buttons": {
+      "getStarted": "Comenzar",
+      "learnMore": "Más información",
+      "createMemorial": "Crear memorial",
+      "contactUs": "Contáctenos",
+      "exploreProducts": "Explorar productos"
+    },
+    "navigation": {
+      "home": "Inicio",
+      "products": "Productos",
+      "pricing": "Precios",
+      "about": "Nosotros",
+      "blog": "Blog",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de servicio"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Transforme recuerdos en legados digitales duraderos",
+      "subtitle": "Cree memoriales digitales duraderos para sus seres queridos"
+    },
+    "features": {
+      "title": "Características que nos hacen especiales",
+      "subtitle": "Descubra las características únicas que destacan nuestros memoriales digitales.",
+      "feature1": {
+        "title": "Memoriales con código QR",
+        "description": "Páginas conmemorativas fácilmente accesibles a través de códigos QR que pueden colocarse en lápidas."
+      },
+      "feature2": {
+        "title": "Legado digital",
+        "description": "Cree un legado digital duradero que preserve los recuerdos para las generaciones."
+      },
+      "feature3": {
+        "title": "Fácil de crear",
+        "description": "Proceso sencillo para crear hermosos memoriales digitales para sus seres queridos."
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "step1": {
+        "title": "Crear un perfil",
+        "description": "Configure un perfil de memorial digital para su ser querido."
+      },
+      "step2": {
+        "title": "Añadir contenido",
+        "description": "Suba fotos, videos, historias y recuerdos."
+      },
+      "step3": {
+        "title": "Colocar código QR",
+        "description": "Reciba su código QR único para colocar en el memorial."
+      }
+    }
+  },
+  "locizeTest": {
+    "title": "Página de prueba de Locize",
+    "description": "Esta página demuestra la integración de Locize para traducciones.",
+    "currentLanguage": "Idioma actual",
+    "translationsLoaded": "Traducciones cargadas con éxito",
+    "addTranslation": "Añadir traducción",
+    "updateTranslation": "Actualizar traducción",
+    "translationKey": "Clave de traducción",
+    "translationValue": "Valor de traducción",
+    "translationExample": "Ejemplo de traducción"
+  }
+}

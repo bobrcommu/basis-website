@@ -2,20 +2,397 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer components {
+  .article-content {
+    @apply max-w-3xl mx-auto;
+    
+    h2 {
+      @apply text-2xl font-bold mt-8 mb-4 text-gray-800 dark:text-gray-200;
+    }
+    
+    h3 {
+      @apply text-xl font-semibold mt-6 mb-3 text-gray-700 dark:text-gray-300;
+    }
+
+    p {
+      @apply mb-4 leading-relaxed text-gray-600 dark:text-gray-400;
+    }
+
+    ul, ol {
+      @apply mb-6 pl-6;
+      li {
+        @apply mb-2;
+      }
+    }
+
+    .comparison-table {
+      @apply my-8 rounded-lg overflow-hidden shadow-lg;
+      
+      .table-row {
+        @apply grid grid-cols-2 gap-4 p-4 even:bg-gray-50 dark:even:bg-gray-800;
+        
+        .table-cell {
+          @apply p-3;
+          
+          strong {
+            @apply text-gray-900 dark:text-white;
+          }
+        }
+      }
+    }
+
+    blockquote {
+      @apply border-l-4 border-gray-200 dark:border-gray-600 pl-4 italic my-6 text-gray-500 dark:text-gray-400;
+    }
+
+    .conclusion {
+      @apply bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border-l-4 border-blue-400 dark:border-blue-600 mt-8;
+    }
+  }
+
+  /* Blog article container and title fixes */
+  .article-container {
+    min-height: 100vh;
+    padding-top: 6rem; /* Extra top padding to accommodate header */
+    margin-top: 2rem; /* Additional margin for spacing */
+  }
 }
 
+:root {
+  --background: #F4EFE3; /* Light sand/beige */
+  --foreground: #1a1a1a; /* Slightly softened black for text */
+  --primary: #000000; /* Pure black for primary elements */
+  --primary-light: #333333; /* Lighter black */
+  --primary-dark: #000000; /* Deep black */
+  --accent: #c19a6b; /* Warm sand accent */
+  --accent-light: #d4b996; /* Lighter sand accent */
+  --accent-dark: #9f7e53; /* Darker sand accent */
+  --neutral-50: #faf7f0; /* Lightest sand */
+  --neutral-100: #F5EFE4; /* Light sand */
+  --neutral-200: #e6dfd0; /* Medium-light sand */
+  --neutral-300: #d7ceba; /* Medium sand */
+  --neutral-800: #3d3529; /* Dark sand-brown */
+  --neutral-900: #2a251c; /* Very dark sand-brown */
+  --neutral-950: #1a1813; /* Near-black sand-brown */
+  --success: #5f8d4e; /* Muted green */
+  --warning: #d4a373; /* Warm sand brown */
+  --danger: #9e2a2b; /* Muted red */
+}
+
+/* 
+ * We're using a consistent color scheme for both light and dark mode
+ * to ensure a respectful, consistent experience regardless of user preference
+ */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2a251c; /* Dark sand-brown background */
+    --foreground: #f5f0e4; /* Light sand for text */
+    --primary: #f5f0e4; /* Light sand for primary elements */
+    --primary-light: #e6dfd0; /* Slightly darker sand */
+    --primary-dark: #faf7f0; /* Brightest sand */
+    --accent: #d4b996; /* Lighter sand accent */
+    --accent-light: #e6dfd0; /* Very light sand accent */
+    --accent-dark: #c19a6b; /* Darker sand accent */
   }
 }
 
 body {
   color: var(--foreground);
+  background: transparent;
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+}
+
+/* Add specific styling for the main element to prevent background overlay */
+main {
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero section shouldn't have a background from body */
+section.hero-section {
+  background: transparent !important;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+/* Logo font styling */
+.logo-text {
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Gradient text utilities */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-primary {
+  background-image: linear-gradient(to right, var(--primary), var(--primary-dark));
+}
+
+.gradient-accent {
+  background-image: linear-gradient(to right, var(--accent), var(--accent-dark));
+}
+
+.gradient-sand {
+  background-color: rgba(244, 239, 227, 0.8); /* Match --background with 80% opacity */
+}
+
+.dark .gradient-sand {
+  background-color: rgba(20, 20, 20, 0.8); /* Dark mode with 80% opacity */
+}
+
+/* Add back the gradient-bg-sand class with correct colors */
+.gradient-bg-sand {
+  background-color: rgba(244, 239, 227, 0.8); /* Match --background with 80% opacity */
+}
+
+.dark .gradient-bg-sand {
+  background-color: rgba(20, 20, 20, 0.8); /* Dark mode with 80% opacity */
+}
+
+/* Card styling */
+.card {
+  @apply bg-neutral-50 dark:bg-neutral-800 rounded-2xl shadow-sm border border-neutral-200 dark:border-neutral-700 overflow-hidden;
+}
+
+/* Shadow utilities */
+.shadow-soft-sm {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-soft-md {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-soft-lg {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-soft-xl {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-soft-2xl {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode shadow variants */
+.dark .shadow-soft-sm {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dark .shadow-soft-md {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.dark .shadow-soft-lg {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.dark .shadow-soft-xl {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.dark .shadow-soft-2xl {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Polaroid animations */
+.polaroid-animated .polaroid {
+  animation: fadeIn 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+.polaroid-animated .polaroid:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.polaroid-animated .polaroid:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.polaroid-animated .polaroid:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes rotatePolaroid {
+  0% {
+    transform: rotate(45deg) translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Additional hover animations for polaroid frames */
+.group:hover .polaroid-frame {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 15px 35px -10px rgba(0,0,0,0.3);
+}
+
+.polaroid-frame img {
+  transition: all 0.6s ease-in-out;
+}
+
+.group:hover .polaroid-frame img {
+  transform: scale(1.05);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+/* Button styles */
+.btn-primary, .btn-secondary {
+  @apply px-6 py-3 rounded-full font-medium text-sm inline-flex items-center justify-center transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary text-neutral-50 shadow-lg hover:bg-primary-dark hover:shadow-xl dark:bg-primary dark:text-neutral-900 dark:hover:bg-primary-light;
+}
+
+.btn-secondary {
+  @apply bg-neutral-200 text-neutral-800 border border-neutral-300 hover:bg-neutral-300 hover:text-neutral-900 hover:shadow-md dark:bg-neutral-800 dark:text-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Background patterns and gradients */
+.gradient-bg-subtle {
+  background: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-100) 100%);
+}
+
+.dark .gradient-bg-subtle {
+  background: linear-gradient(135deg, var(--neutral-950) 0%, var(--neutral-900) 100%);
+}
+
+/* Accessibility improvements */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Shopify button styles */
+.shopify-buy-frame--product {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.shopify-buy__btn-wrapper {
+  width: 100% !important;
+}
+
+.shopify-buy__btn {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 0.125rem !important; /* match the rounded-sm class */
+}
+
+.dark :focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Blog article title fixes */
+.blog-article-header {
+  padding-top: 8rem !important; /* Ensure enough space from the top */
+  margin-top: 2rem !important;
+}
+
+/* Ensure article containers have proper spacing */
+.article-content {
+  margin-top: 4rem !important;
+}
+
+/* Fix for feature section to prevent overlap */
+.feature-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.feature-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure proper positioning for polaroid elements */
+.polaroid-frame {
+  position: relative;
+  z-index: 10;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.polaroid-frame:hover {
+  transform: scale(1.03) rotate(0deg) !important;
+  z-index: 20;
+}
+
+/* Hero section background fix */
+section[class*="min-h-[90vh]"] .absolute.inset-0 img {
+  opacity: 1 !important;
+  z-index: -20;
+}
+
+/* Prevent white overlay from appearing on page load */
+html, body {
+  background-color: transparent !important;
+}
+
+/* Remove the duplicate background implementation */
+section.hero-section::before {
+  content: none;
+}
+
+/* Force transparent backgrounds on key elements */
+.gradient-bg-sand, .gradient-sand {
+  background-color: transparent !important;
 }

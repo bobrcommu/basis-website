@@ -1,0 +1,73 @@
+{
+  "common": {
+    "buttons": {
+      "getStarted": "Get Started",
+      "learnMore": "Learn More",
+      "createMemorial": "Create Memorial",
+      "contactUs": "Contact Us",
+      "exploreProducts": "Explore Products"
+    },
+    "navigation": {
+      "home": "Home",
+      "products": "Products",
+      "pricing": "Pricing",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "footer": {
+      "rights": "All Rights Reserved",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Evere Preserve Memories with Headstone QR Code Memorials",
+      "subtitle": "Connect physical grave markers to digital memories that last forever",
+      "description": "Our weather-resistant cemetery QR code plaques connect memorial sites to digital legacies. Easily attach a memorial QR code to any headstone or grave marker for instant access to cherished memories and stories."
+    },
+    "features": {
+      "title": "Features That Make Us Special",
+      "subtitle": "Discover the unique features that make our digital memorials stand out.",
+      "feature1": {
+        "title": "QR Code Memorials",
+        "description": "Easily accessible memorial pages through QR codes that can be placed on headstones."
+      },
+      "feature2": {
+        "title": "Digital Legacy",
+        "description": "Create a lasting digital legacy that preserves memories for generations."
+      },
+      "feature3": {
+        "title": "Easy to Create",
+        "description": "Simple process to create beautiful digital memorials for your loved ones."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Create a Profile",
+        "description": "Set up a digital memorial profile for your loved one."
+      },
+      "step2": {
+        "title": "Add Content",
+        "description": "Upload photos, videos, stories and memories."
+      },
+      "step3": {
+        "title": "Place QR Code",
+        "description": "Receive your unique QR code to place on the memorial."
+      }
+    }
+  },
+  "locizeTest": {
+    "title": "Locize Test Page",
+    "description": "This page demonstrates the Locize integration for translations.",
+    "currentLanguage": "Current Language",
+    "translationsLoaded": "Translations Loaded Successfully",
+    "addTranslation": "Add Translation",
+    "updateTranslation": "Update Translation",
+    "translationKey": "Translation Key",
+    "translationValue": "Translation Value",
+    "translationExample": "Translation Example"
+  }
+}

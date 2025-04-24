@@ -1,0 +1,30 @@
+# Global rules
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow Google Images to index images
+User-agent: Googlebot-Image
+Allow: /public/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Crawl-delay for all bots
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://evere.io/sitemap.xml
+Sitemap: https://evere.io/en/sitemap.xml
+Sitemap: https://evere.io/nl/sitemap.xml
+Sitemap: https://evere.io/de/sitemap.xml
+Sitemap: https://evere.io/fr/sitemap.xml
+Sitemap: https://evere.io/es/sitemap.xml
+
+# Host
+Host: https://evere.io

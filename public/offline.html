@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Evere Memorial</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#C6A47F">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #FAF7F0;
+      color: #1A1A1A;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      margin: 2rem;
+    }
+    h1 {
+      color: #C6A47F;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #4A4A4A;
+      margin-bottom: 1.5rem;
+    }
+    .logo {
+      max-width: 120px;
+      margin-bottom: 2rem;
+    }
+    .button {
+      display: inline-block;
+      background-color: #C6A47F;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+      border: none;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .button:hover {
+      background-color: #B89470;
+    }
+    .offline-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #C6A47F;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/optimized/EVERELOGOWHITE.webp" alt="Evere Memorial Logo" class="logo" width="120" height="50">
+    <div class="offline-icon">📶</div>
+    <h1>You're Offline</h1>
+    <p>It looks like you're not connected to the internet right now. Please check your connection and try again.</p>
+    <p>Evere Memorial keeps some content available offline, but you'll need a connection to access full memorial profiles.</p>
+    <button class="button" onclick="window.location.reload()">Try Again</button>
+  </div>
+
+  <script>
+    // Check when the user comes back online
+    window.addEventListener('online', () => {
+      window.location.reload();
+    });
+  </script>
+</body>
+</html> 

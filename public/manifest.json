@@ -1,0 +1,74 @@
+{
+  "name": "Evere Memorial",
+  "short_name": "Evere",
+  "description": "Digital memorial experiences to remember your loved ones",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F0",
+  "theme_color": "#C6A47F",
+  "icons": [
+    {
+      "src": "/EVEREICON1.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "/evereicon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "/EVEREICON1.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["lifestyle", "memorial", "remembrance"],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Create Memorial",
+      "short_name": "Create",
+      "description": "Create a new memorial",
+      "url": "/create-memorial",
+      "icons": [
+        {
+          "src": "/everecardmemorial.webp",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Scan",
+      "short_name": "Scan",
+      "description": "Scan a memorial",
+      "url": "/scan",
+      "icons": [
+        {
+          "src": "/qrtag.webp",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/herophone.webp",
+      "type": "image/webp",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/statuehero.webp",
+      "type": "image/webp",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Output configuration for Netlify
+  output: 'export',
+  images: {
+    unoptimized: true,
+    domains: ['evere.io'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    formats: ['image/webp'],
+  },
+  
+  // Trailing slash configuration
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+  
+  // Experimental features
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['@heroicons/react'],
+  },
+  
+  // Increase timeout for static generation
+  staticPageGenerationTimeout: 300,
+  
+  // Skip linting during builds
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  
+  // Skip TS errors during builds
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  
+  // Environment variables
+  env: {
+    LOCIZE_PROJECT_ID: '578277be-b3b6-44f6-ab4f-efefdf5adaeb',
+    LOCIZE_API_KEY: '6437ec51-6944-49a4-8b70-05f7cdf07093',
+    NEXT_PUBLIC_LOCIZE_VERSION: 'latest'
+  },
+
+  // Webpack configuration
+  webpack: (config, { dev, isServer }) => {
+    // Optimize CSS
+    if (!dev && !isServer) {
+      config.optimization.splitChunks.cacheGroups = {
+        ...config.optimization.splitChunks.cacheGroups,
+        styles: {
+          name: 'styles',
+          test: /\.(css|scss)$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      };
+    }
+
+    return config;
+  },
+};
+
+module.exports = nextConfig;

@@ -1,0 +1,72 @@
+{
+  "common": {
+    "buttons": {
+      "getStarted": "Beginnen",
+      "learnMore": "Meer informatie",
+      "createMemorial": "Gedenkteken maken",
+      "contactUs": "Neem contact op",
+      "exploreProducts": "Producten verkennen"
+    },
+    "navigation": {
+      "home": "Home",
+      "products": "Producten",
+      "pricing": "Prijzen",
+      "about": "Over ons",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "footer": {
+      "rights": "Alle rechten voorbehouden",
+      "privacy": "Privacybeleid",
+      "terms": "Gebruiksvoorwaarden"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Transformeer herinneringen in blijvende digitale erfenissen",
+      "subtitle": "Maak blijvende digitale gedenktekens voor uw dierbaren"
+    },
+    "features": {
+      "title": "Functies die ons bijzonder maken",
+      "subtitle": "Ontdek de unieke functies die onze digitale gedenktekens laten opvallen.",
+      "feature1": {
+        "title": "QR-code Gedenktekens",
+        "description": "Eenvoudig toegankelijke herdenkingspagina's via QR-codes die op grafstenen kunnen worden geplaatst."
+      },
+      "feature2": {
+        "title": "Digitale Erfenis",
+        "description": "Creëer een blijvende digitale erfenis die herinneringen bewaart voor generaties."
+      },
+      "feature3": {
+        "title": "Eenvoudig te maken",
+        "description": "Eenvoudig proces om mooie digitale gedenktekens te maken voor uw dierbaren."
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe het werkt",
+      "step1": {
+        "title": "Maak een profiel",
+        "description": "Stel een digitaal herdenkingsprofiel op voor uw dierbare."
+      },
+      "step2": {
+        "title": "Voeg inhoud toe",
+        "description": "Upload foto's, video's, verhalen en herinneringen."
+      },
+      "step3": {
+        "title": "Plaats QR-code",
+        "description": "Ontvang uw unieke QR-code om op het gedenkteken te plaatsen."
+      }
+    }
+  },
+  "locizeTest": {
+    "title": "Locize Testpagina",
+    "description": "Deze pagina demonstreert de Locize-integratie voor vertalingen.",
+    "currentLanguage": "Huidige taal",
+    "translationsLoaded": "Vertalingen succesvol geladen",
+    "addTranslation": "Vertaling toevoegen",
+    "updateTranslation": "Vertaling bijwerken",
+    "translationKey": "Vertaalsleutel",
+    "translationValue": "Vertaalwaarde",
+    "translationExample": "Vertaalvoorbeeld"
+  }
+}
